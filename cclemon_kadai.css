@@ -1,0 +1,207 @@
+/* 共通 */
+h1, p {
+    margin: 0px;
+}
+body {
+    font-family: 'Arial Rounded MT Bold','Arial Rounded MT Bold','Arial Black','ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','Yu Gothic UI','ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+}
+button {
+    font-family: 'Arial Rounded MT Bold','Arial Rounded MT Bold','Arial Black','ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','Yu Gothic UI','ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+}
+
+
+/* header */
+header {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    height: 10%;
+}
+
+main {
+    height: 80%;
+}
+
+/* play area全体 */
+.play-zone-box {
+    display: flex;
+    justify-content: flex-start;
+    height: 80%;
+}
+.hands {
+    height: 30%;
+}
+.player {
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+.player img {
+    width: 100%;
+    height: 100%;
+}
+.power-count {
+    height: 20%;
+}
+.power-count-box {
+    display: flex;
+    height: 20%;
+}
+.power-img {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+.power-img img {
+    width: 100%;
+    height: 100%;
+}
+.kakeru-img {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+}
+.cross-img {
+    width: 70%;
+    margin: 0 auto;
+}
+.power-count {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+}
+.power-count p {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+}
+
+/* playerのエリア */
+.player-zone {
+    width: 30%;
+}
+.hands button{
+    width: 80%;
+    height: 15%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    background-color: #91f2f9;
+    border-radius: 4px;
+    font-weight: bold;
+    border: solid 2px #0998cd;
+}
+#my_player_img {
+    width: 100%;
+    height: 50%;
+}
+
+/* computerのエリア */
+.computer-zone {
+    width: 30%;
+}
+.pc_hands_top {
+    height: 30%;
+}
+.pc_hands {
+    width: 100%;
+    height: 70%;
+    text-align: center;
+}
+
+/* 戦場 */
+.match-zone {
+    width: 40%;
+    position: relative;
+}
+.attack-lemon-left {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 40%;
+    left: 0;
+}
+.attack-lemon-left img {
+    width: 80px;
+    height: 80px;
+}
+.attack-lemon-right {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 50%;
+    left: 90%;
+}
+.attack-lemon-right img {
+    width: 80px;
+    height: 80px;
+}
+
+/* judgement */
+.judgement {
+    height: 0%;
+    display: none;
+}
+
+/* rule */
+.rule {
+    background-color: rgb(215, 249, 203);
+}
+.rule-title {
+    font-weight: bold;
+}
+.rule p {
+    font-size: 18px;
+    text-align: center;
+}
+
+/*スマホ用のcssを記述*/
+@media screen and (max-width:639px) {
+    h1 {
+        font-size: 40px;
+    }
+    button {
+        font-size: 10px;
+    }
+    .power-count p {
+        font-size: 40px;
+    }
+    .pc_hands {
+        font-size: 30px;        
+    } 
+}
+
+/*tablet用のcssを記述*/
+@media only screen and (min-width:640px) and (max-width:1023px) {
+    h1 {
+        font-size: 70px;
+    }
+    button {
+        font-size: 20px;
+    }
+    .power-count p {
+        font-size: 50px;
+    }
+    .pc_hands {
+        font-size: 50px;        
+    } 
+}
+
+/*pc用のcssを記述*/
+@media screen and (min-width:1024px) {
+    h1 {
+        font-size: 90px;
+    }
+    button {
+        font-size: 20px;
+    }
+    .power-count p {
+        font-size: 50px;
+    }
+    .pc_hands {
+        font-size: 50px;        
+    } 
+}
